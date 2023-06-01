@@ -146,7 +146,7 @@ public class Noutbook {
         return map;
     }
 
-    //Метод создает экземпляр класса с минимальными (дефолтными) параметрами запроса пользователя
+    //Метод создает ноутбук с минимальными (дефолтными) параметрами запроса пользователя
     public static Noutbook mapHashset (Map<String, String> map){
         Map<String, String> mapNew = new HashMap<>(map);
         //Set<Noutbook> myNout = new HashSet<>();
@@ -157,6 +157,7 @@ public class Noutbook {
         return noutbook;
     }
 
+    //Метод сравнивает ноутбуки с параметрами пользователя
     public static Set<Noutbook> noutbooksPrint (Set<Noutbook> noutbook, Noutbook myNoutbook){
         Set<Noutbook> noutbookNew = new HashSet<>(noutbook);
         Noutbook noutbookMy = myNoutbook;
